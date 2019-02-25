@@ -1,0 +1,239 @@
+body {
+  background-color: #000;
+  color: #2856A3;
+  font-size: 5rem; }
+
+.form__wrapper {
+  width: 100vw;
+  height: 100vh; }
+
+.form-container {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-left: 2rem; }
+
+.form-container input[type=text] {
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+input[type=text] {
+  background: #2856A3;
+  border: none; }
+
+input[type=checkbox] {
+  zoom: 4;
+  height: 3rem; }
+
+.special-options {
+  background-color: #2856A3;
+  border: none;
+  padding: 1rem; }
+
+.form__btn {
+  width: 100%; }
+
+.btn {
+  color: #000;
+  background-color: #2856A3;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  width: 8rem;
+  margin-top: 2rem; }
+
+.form-control {
+  background-color: #2856A3;
+  border: none;
+  padding-top: 2rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif; }
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #000;
+  overflow: hidden; }
+
+.tardis__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: jump .2s linear infinite, move .2s linear infinite, disappear 7s;
+  animation-fill-mode: forwards;
+  z-index: 1; }
+
+@keyframes jump {
+  from {
+    top: 50%; }
+  to {
+    top: 50.5%; } }
+@keyframes move {
+  from {
+    left: 50%; }
+  to {
+    left: 50.5%; } }
+@keyframes disappear {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: .7; }
+  40% {
+    opacity: .05; }
+  50% {
+    opacity: .5; }
+  60% {
+    opacity: .7; }
+  80% {
+    opacity: .05; }
+  100% {
+    opacity: 1; } }
+.white-line-1 {
+  width: .5px;
+  height: 2rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  animation: fall 1s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-2 {
+  width: .5px;
+  height: 4rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  animation: fall .4s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-3 {
+  width: .5px;
+  height: 3rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  animation: fall 1s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-4 {
+  width: .5px;
+  height: 3rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  animation: fall .5s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-5 {
+  width: .5px;
+  height: 3.5rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  animation: fall .5s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-6 {
+  width: .5px;
+  height: 1.7rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  animation: fall .8s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-7 {
+  width: .5px;
+  height: 3rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 67%;
+  animation: fall .2s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-8 {
+  width: .5px;
+  height: 3.5rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 71%;
+  animation: fall .4s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-9 {
+  width: .5px;
+  height: 3.4rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 77%;
+  animation: fall .5s linear infinite;
+  animation-fill-mode: forwards; }
+
+.white-line-10 {
+  width: .5px;
+  height: 2.5rem;
+  background: #fff;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 85%;
+  animation: fall .7s linear infinite;
+  animation-fill-mode: forwards; }
+
+@keyframes fall {
+  from {
+    top: 0%; }
+  to {
+    top: 100%; } }
+.doctor-13 {
+  position: absolute;
+  top: -1000%;
+  left: 10%;
+  animation: doctor-fall 4s linear; }
+  .doctor-13 img {
+    max-width: 2rem; }
+
+@keyframes doctor-fall {
+  0%, 40% {
+    top: -40%; }
+  60%, 100% {
+    top: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
