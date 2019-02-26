@@ -1,7 +1,12 @@
+*:focus {
+    outline:none;
+}
+
 body {
     background-color: $background_color;
     color: $tardis_color;
-    font-size: 5rem;
+    // font-size: 5rem;
+    // cursor: url(../images/screwdriver.png), auto;
 }
 
 .form__wrapper {
@@ -16,9 +21,9 @@ body {
 }
 
 .form-container input[type=text] {
-    color: $background_color;
-    font-size: 1rem;
-    text-align: center;
+    color: $tardis_color;
+    border: none;
+    font-size: 2.5rem;
     line-height: 2;
 }
 
@@ -29,14 +34,14 @@ body {
 }
 
 input[type=text]{
-    background: $tardis_color;
+    background: transparent;
     border: none;
 }
 
-input[type=checkbox] {
-    zoom: 4;
-    height: 3rem;
-}
+// input[type=checkbox] {
+//     // zoom: 4;
+//     height: 3rem;
+// }
 
 .special-options {
     background-color: $tardis_color;
@@ -49,19 +54,71 @@ input[type=checkbox] {
 }
 
 .btn {
-    color: $background_color;
-    background-color: $tardis_color;
-    border: none;
-    padding: 1rem;
+    color: $tardis_color;
+    border: none;   
+    background-color: $background_color;
+    font-size: 4rem;
+    font-weight: 800;
     cursor: pointer;  
     width: 8rem;
     margin-top: 2rem;
 }
 
 .form-control {
-    background-color: $tardis_color;
-    border: none;  
+    background-color: $background_color;
+    color: $tardis_color;
+    font-size: 4rem;
+    font-weight: 800;
+    border: 10px solid $tardis_color;  
     padding-top: 2rem;
 }
 
+.checkbox {
+  background-color: $tardis_color !important;
 
+}
+
+.select {
+    margin-top: 3rem;
+}
+
+.special-options {
+    background-color: $background_color;
+    color: $tardis_color;
+    font-size: 4rem;
+    position: absolute;
+    margin-left: 2rem;
+    font-weight: 800;
+    border: 10px solid $tardis_color;  
+}
+
+input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 27px;
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    // appearance: none;
+    // outline: 0;
+    // background: $tardis_color;
+    // height: 30px;
+    // width: 30px;
+    // padding-top: 2.5rem;
+    // border: none;
+  }
+  
+  input[type=checkbox]:after {
+    content: " ";
+    background-color: $tardis_color;
+    display: inline-block;
+    visibility: visible;
+  }
+  
+  input[type=checkbox]:checked:after {
+    content: "\2714";
+    
+  }
+
+ 
