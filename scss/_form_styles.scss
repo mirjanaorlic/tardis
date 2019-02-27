@@ -5,7 +5,6 @@
 body {
     background-color: $background_color;
     color: $tardis_color;
-    // font-size: 5rem;
     // cursor: url(../images/screwdriver.png), auto;
 }
 
@@ -38,11 +37,6 @@ input[type=text]{
     border: none;
 }
 
-// input[type=checkbox] {
-//     // zoom: 4;
-//     height: 3rem;
-// }
-
 .special-options {
     background-color: $tardis_color;
     border: none;  
@@ -73,11 +67,6 @@ input[type=text]{
     padding-top: 2rem;
 }
 
-.checkbox {
-  background-color: $tardis_color !important;
-
-}
-
 .select {
     margin-top: 3rem;
 }
@@ -90,35 +79,49 @@ input[type=text]{
     margin-left: 2rem;
     font-weight: 800;
     border: 10px solid $tardis_color;  
+    overflow-y: scroll;
 }
 
-input[type=checkbox] {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-    cursor: pointer;
-    font-size: 27px;
-    // -webkit-appearance: none;
-    // -moz-appearance: none;
-    // appearance: none;
-    // outline: 0;
-    // background: $tardis_color;
-    // height: 30px;
-    // width: 30px;
-    // padding-top: 2.5rem;
-    // border: none;
-  }
-  
-  input[type=checkbox]:after {
-    content: " ";
-    background-color: $tardis_color;
-    display: inline-block;
-    visibility: visible;
-  }
-  
-  input[type=checkbox]:checked:after {
-    content: "\2714";
-    
-  }
+::-webkit-scrollbar {
+    background-color: $background_color;
+}
 
- 
+//Checkbox styles
+
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: $tardis_color;
+    height: 25px;
+    width: 25px;
+    border: none;
+  }
+  
+  input[type="checkbox"]:checked {
+    background: $tardis_color;
+  }
+  
+  input[type="checkbox"]:hover {
+    filter: brightness(90%);
+  }
+  
+  input[type="checkbox"]:after {
+    content: '';
+    position: relative;
+    left: 40%;
+    top: 20%;
+    width: 15%;
+    height: 40%;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+  }
+  
+  input[type="checkbox"]:checked:after {
+    display: block;
+  }
+  
