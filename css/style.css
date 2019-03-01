@@ -10,14 +10,14 @@ body {
   height: 100vh; }
 
 .form-container {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
   margin-left: 2rem; }
 
 .form-container input[type=text] {
   color: #2856A3;
   border: none;
-  font-size: 2.5rem;
+  font-size: 4rem;
   line-height: 2; }
 
 .form {
@@ -52,8 +52,7 @@ input[type=text] {
   color: #2856A3;
   font-size: 4rem;
   font-weight: 800;
-  border: 10px solid #2856A3;
-  padding-top: 2rem; }
+  border: 10px solid #2856A3; }
 
 .select {
   margin-top: 3rem; }
@@ -64,9 +63,11 @@ input[type=text] {
   font-size: 4rem;
   position: absolute;
   margin-left: 2rem;
+  margin-top: 1.8rem;
   font-weight: 800;
   border: 10px solid #2856A3;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  cursor: s-resize; }
 
 ::-webkit-scrollbar {
   background-color: #000; }
