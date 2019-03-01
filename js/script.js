@@ -11,8 +11,13 @@ function formCheck(form) {
 		return false;
 	}
 
+	if(!form.status.checked) {
+		return false;
+	}
+
 	return true;
 }
+
 
 function checkboxTicked(param) {
 	
