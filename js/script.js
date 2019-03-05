@@ -1,3 +1,4 @@
+
 function formCheck(form) {
 	
 	var name = form.name.value;
