@@ -44,7 +44,7 @@ input[type=text]{
     font-size: 4rem;
     font-weight: 800;
     cursor: pointer;  
-    width: 8rem;
+    width: 12rem;
     margin-top: 2rem;
 }
 .form-control {
@@ -63,6 +63,7 @@ input[type=text]{
     background: url("../images/arrow.png") no-repeat center;
     background-position: right center;
     background-size: auto 90%;
+    width: 40rem;
 }
 .special-options {
     background-color: $background_color;
