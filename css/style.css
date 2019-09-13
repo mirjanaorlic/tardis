@@ -138,7 +138,12 @@ html {
   transform: translate(-50%, -50%);
   animation: jump .2s linear infinite, move .2s linear infinite, disappear 7s;
   animation-fill-mode: forwards;
-  z-index: 1; }
+  z-index: 1;
+  max-width: 400px; }
+
+.tardis {
+  max-width: 100%;
+  height: auto; }
 
 @keyframes jump {
   from {
